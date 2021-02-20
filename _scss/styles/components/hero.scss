@@ -58,10 +58,10 @@
 
 @keyframes move-forever {
   0% {
-    transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
   100% {
-    transform: translate3d(85px, 0, 0);
+    transform: translate3d(100vw, 0, 0);
   }
 }
 
@@ -92,4 +92,73 @@
   .hero {
     left: 20%;
   }
+}
+
+.hero-blob-wrapper {
+  position: absolute;
+
+}
+
+#hero-blob-wrapper-1 {
+  /* The blue one*/
+  transform: translateY(45vh);
+
+  .hero-blob {
+    @include heroAnim(-83s, 120s);
+  }
+}
+
+#hero-blob-wrapper-2 {
+  /* The orange one*/
+  transform: translateY(35vh);
+
+  .hero-blob {
+    @include heroAnim(-18s, 120s);
+  }
+}
+
+#hero-blob-wrapper-3 {
+  /* The purple one*/
+  transform: translateY(5em);
+
+  .hero-blob {
+    @include heroAnim(-102s, 180s);
+  }
+}
+
+#hero-blob-wrapper-4 {
+  /* The yellow one*/
+  transform: translateY(55vh);
+
+  .hero-blob {
+    @include heroAnim(-30s, 60s);
+  }
+
+}
+
+#hero-blob-wrapper-5 {
+  /* The turquoise one */
+  transform: translateY(65vh);
+
+  .hero-blob {
+    @include heroAnim(-72s, 180s);
+  }
+}
+
+.hero-blob-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-blob-overlay {
+  background-color: rgba(255,255,255,0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

@@ -1,0 +1,22 @@
+.moon-container {
+
+  .moon {
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
+  .cloud-cyan {
+    position: absolute;
+    overflow: hidden;
+    top: 2em;
+    left: -2em;
+  }
+
+  .cloud-violet {
+    position: absolute;
+    overflow: hidden;
+    top: -1em;
+    left: -10em;
+  }
+}
