@@ -19,7 +19,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.3.6
         with:
           source: _scss/main.scss
-          destination: assets/css/main.css
+          destination: css/main.css
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
