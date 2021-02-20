@@ -3,7 +3,6 @@ on:
     branches:
       - master
 
-
 jobs:
   build_css:
     runs-on: ubuntu-latest
@@ -16,33 +15,14 @@ jobs:
             fetch-depth: 10
             submodules: true
 
-      - name: Make destination directory for compiled CSS
-        run: mkdir -vp /tmp/vmcs-7wc-website/assets/css
-
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.3.6
         with:
           source: _scss/main.scss
-          destination: /tmp/vmcs-7wc-website/assets/css/main.css
-
-      - name: Checkout destination Git branch
-        uses: actions/checkout@v2
-        with:
-            ref: gh-pages
-            fetch-depth: 1
-
-      - name: Move compiled CSS to path within gh-pages branch
-        run: mv /tmp/vmcs-7wc-website/assets/css assets/
-
-      - name: Add and Commit changes to gh-pages branch
-        run: |
-          git config --local user.email 'action@github.com'
-          git config --local user.name 'GitHub Action'
-          git add assets/css/*
-          git commit -m 'Updates compiled CSS files'
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+          destination: assets/css/main.css
+          
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          publish_dir: .
