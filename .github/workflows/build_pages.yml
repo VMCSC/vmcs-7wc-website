@@ -19,7 +19,7 @@ jobs:
         uses: gha-utilities/sass-build@v0.3.6
         with:
           source: _scss/main.scss
-          destination: css/main.css
+          destination: /home/runner/work/vmcs-7wc-website/vmcs-7wc-website/css/main.css
           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
