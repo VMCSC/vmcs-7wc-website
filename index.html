@@ -97,8 +97,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             <ul class="nav-links">
                 <li><a data-scroll href="#top">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#weeks">Weeks</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <!--                    <li><a href="#past-projects">Past Projects</a></li>-->
                 <li><a href="#sponsors">Sponsorship</a></li>
                 <!--                <li><a href="blog">Blog</a></li>-->
             </ul>
@@ -109,7 +109,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <div class="hero-background">
     <div class="hero" style="z-index: 12;">
-        <div class="hero-blob-overlay"></div>
+        <div class="hero-blob-overlay d-none d-md-block"></div>
         <h1>7 Week Challenge</h1>
         <h6>April 24th - June 13th, 2021</h6>
         <div style="font-size: 0.8em; margin-top: 20px;">
@@ -162,8 +162,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <div id="hero-blob-wrapper-5" class="hero-blob-wrapper">
             <img id="hero-blob-5" class="hero-blob" src="assets/images/hero/hero-blob-5.svg">
         </div>
-
-
+        <div class="hero-blob-overlay d-md-none"></div>
     </div>
 
 
@@ -460,14 +459,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </div> <!-- END CAROUSEL -->
 
 <!-- FAQ -->
-<div class="container" id="faq" data-aos="fade-in" style="text-align: center">
+<div class="container" id="faq" data-aos="fade-in" style="text-align: center; padding-top: 2em;">
     <div class="justify-content-center">
         <h2>FAQ</h2>
         <div class="row accordion text-left" id="faqAccordion">
             <div class="col" id="faq1">
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqOne">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
                             Question 1?
                         </h6>
                     </div>
@@ -480,7 +479,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqTwo">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="true" aria-controls="collapseFaqTwo">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqTwo" aria-expanded="true" aria-controls="collapseFaqTwo">
                             Question 2?
                         </h6>
                     </div>
@@ -493,7 +492,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqThree">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqThree" aria-expanded="true" aria-controls="collapseFaqThree">
                             Question 3?
                         </h6>
                     </div>
@@ -506,7 +505,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqFour">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqFour" aria-expanded="true" aria-controls="collapseFaqFour">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqFour" aria-expanded="true" aria-controls="collapseFaqFour">
                             Question 4?
                         </h6>
                     </div>
@@ -519,7 +518,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqFive">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqFive" aria-expanded="true" aria-controls="collapseFaqFive">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqFive" aria-expanded="true" aria-controls="collapseFaqFive">
                             Question 5?
                         </h6>
                     </div>
@@ -534,7 +533,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             <div class="col" id="faq2">
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqSix">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqSix" aria-expanded="true" aria-controls="collapseFaqSix">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqSix" aria-expanded="true" aria-controls="collapseFaqSix">
                             Question 6?
                         </h6>
                     </div>
@@ -546,7 +545,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqSeven">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqSeven" aria-expanded="true" aria-controls="collapseFaqSeven">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqSeven" aria-expanded="true" aria-controls="collapseFaqSeven">
                             Question 7?
                         </h6>
                     </div>
@@ -558,7 +557,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqEight">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqEight" aria-expanded="true" aria-controls="collapseFaqEight">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqEight" aria-expanded="true" aria-controls="collapseFaqEight">
                             Question 8?
                         </h6>
                     </div>
@@ -570,7 +569,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqNine">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqNine" aria-expanded="true" aria-controls="collapseFaqNine">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqNine" aria-expanded="true" aria-controls="collapseFaqNine">
                             Question 4?
                         </h6>
                     </div>
@@ -582,7 +581,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
                 <div class="card border-0 bg-transparent">
                     <div class="card-header border-0 p-0 bg-transparent" id="faqTen">
-                        <h6 data-toggle="collapse" data-target="#collapseFaqTen" aria-expanded="true" aria-controls="collapseFaqTen">
+                        <h6 class="cursor-pointer" data-toggle="collapse" data-target="#collapseFaqTen" aria-expanded="true" aria-controls="collapseFaqTen">
                             Question 5?
                         </h6>
                     </div>
