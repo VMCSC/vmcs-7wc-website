@@ -14,6 +14,9 @@ jobs:
             ref: master
             fetch-depth: 10
             submodules: true
+            
+      - name: List directory
+        run: ls .
 
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.3.6
