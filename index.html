@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vincent Massey 7 Week Challenge</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="https://7wc.vmcs.club/">
+    <meta name="description" content="The Vincent Massey 7 Week Challenge is a series of events hosted by VMCS in partnership with MasseyHacks, dedicated to inspiring innovation, the development of big ideas, and a passion for learning. Get ready for an experience of a lifetime!">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "Vincent Massey 7 Week Challenge",
+            "image": "https://7wc.vmcs.club/assets/logo/logo.png",
+            "email": "hello@vmcs.club",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1800 Liberty St",
+                "addressLocality": "Windsor",
+                "addressRegion": "Ontario",
+                "addressCountry": "Canada",
+                "postalCode": "N9E 1J2"
+            },
+            "url": "https://7wc.vmcs.club/"
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        #mc_embed_signup {
+            background: none;
+            clear: left;
+            font-family: 'IBM Plex Sans', sans-serif;
+            padding: 0;
+        }
+        
+        #mc_embed_signup form {
+            padding: 0;
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        
+        #mc_embed_signup input.email {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+        
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+</head>
+
+<!--
+███████╗██╗    ██╗ ██████╗
+╚════██║██║    ██║██╔════╝
+    ██╔╝██║ █╗ ██║██║
+   ██╔╝ ██║███╗██║██║
+   ██║  ╚███╔███╔╝╚██████╗
+   ╚═╝   ╚══╝╚══╝  ╚═════╝
+
+MasseyHacks VII Website
+Design by David Hui, James Xu, Gordon Lin, and Lily Ni
+
+Licensed under MIT:
+
+Copyright 2021 Vincent Massey Computer Science Club
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<body id="top">
+<nav id="main-nav" class="nav-closed">
+    <div class="nav-icon-container" id="main-nav-icon-container">
+        <div class="nav-icon"></div>
+    </div>
+    <div class="nav-links-wrapper" id="main-nav-links" style="display:none">
+        <div>
+            <ul class="nav-links">
+                <li><a data-scroll href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <!--                    <li><a href="#past-projects">Past Projects</a></li>-->
+                <li><a href="#sponsors">Sponsorship</a></li>
+                <!--                <li><a href="blog">Blog</a></li>-->
+            </ul>
+        </div>
+    
+    </div>
+</nav>
+
+<div class="hero-background">
+    <div class="hero" style="z-index: 12; background: none">
+        <h1>7 Week Challenge</h1>
+        <h6>April 24th - June 13th, 2021</h6>
+        <div style="font-size: 0.8em; margin-top: 20px;">
+<!--            <a class="button" href="files/mh6-transparency.pdf" style="padding-left: 1em; padding-right: 1em;">Transparency-->
+<!--                Report</a>-->
+            <!--            <a href="https://register.atmh.tech" class="button">Hacker Application</a>-->
+            <!--            <a href="http://go.atmh.tech/mentor" class="button">Mentor Application</a>-->
+        </div>
+        
+                <!-- Begin Mailchimp Signup Form -->
+
+                <div id="mc_embed_signup">
+                    <form action="https://masseyhacks.us17.list-manage.com/subscribe/post?u=a94f560f49609f97702adaac7&amp;id=9434a090dc"
+                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                          target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <label for="mce-EMAIL">Subscribe for Updates!</label>
+                            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address"
+                                   required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                      name="b_a94f560f49609f97702adaac7_9434a090dc"
+                                                                                                      tabindex="-1" value="">
+                            </div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                      id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+    </div>
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    </div>
+</div>
+
+<!-- About -->
+<div class="container" id="about" style="@media(min-width: 968px) {margin-top: 5vh;}">
+<!--    <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">-->
+<!--        &lt;!&ndash; Intro paragraph &ndash;&gt;-->
+<!--        <div class="col-md-8">-->
+<!--            <div class="feature-text">-->
+<!--                <h2>Canada's oldest high school hackathon</h2>-->
+<!--                <p>MasseyHacks is a high school hackathon where 150+ students of all skill levels gather to learn,-->
+<!--                    create, and experience something amazing. Over this 36-hour event, you will find seasoned-->
+<!--                    mentors to learn from, lively activities to take part in, and a plethora of workshops to discover! Complete with three main learning streams based on-->
+<!--                    your hacking experience, MasseyHacks is a place to explore the world of computer science and-->
+<!--                    technology. </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; Stats &ndash;&gt;-->
+<!--        <div class="col-md-4" style="text-align: right;">-->
+<!--            <div class="row feature-stats">-->
+<!--                <div class="col-6 col-md-12">-->
+<!--                    <h2 style="font-weight: bold;">$<span class="js-counter" data-count="18300"-->
+<!--                                                          data-duration="1000">0</span>+</h2>-->
+<!--                    <p>in prizes awarded</p>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-12">-->
+<!--                    <h2 style="font-weight: bold;"><span class="js-counter" data-count="1000"-->
+<!--                                                         data-duration="600">0</span>+</h2>-->
+<!--                    <p>students have attended</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--        <div id="location">-->
+<!--            <div class="row row-tb-margin align-items-center justify-content-center">-->
+<!--                <div class="col-md-5">-->
+<!--                    <i class="fas fa-map" style="font-size: 3em"></i>-->
+<!--                </div>-->
+<!--                <div class="col-md-5">-->
+<!--                    <iframe width="auto" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJvZ9TEqNQXEAR_Wlq_blHgm8&key=AIzaSyBkso0Y6E_1IOkRy_UMXjX2t9yfpqOl4OE" allowfullscreen></iframe>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <!-- Statements -->
+        <div id="info-section">
+            <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">
+                <div class="col-md-5">
+                    <h2>
+                        Learn something new.
+                    </h2>
+                </div>
+                <div class="col-md-5">
+                    <img alt="stuff" class="img-fluid" src="assets/images/image2.jpg">
+                </div>
+            </div>
+            <div class="row row-tb-margin align-items-center justify-content-center" data-aos="fade-in">
+                <div class="col-md-5">
+                    <img alt="stuff" class="img-fluid" src="assets/images/20190323144137_IMG_3705.jpg">
+                </div>
+                <div class="col-md-5">
+                    <h2>
+                        Create something incredible.
+                    </h2>
+                </div>
+            </div>
+        </div> <!-- END STATEMENTS -->
+</div>
+<!-- Streams -->
+<!--<div class="container" style="margin-top: 3em;">-->
+<!--    <div style="background: rgb(227,255,225)" class="section-heading">-->
+<!--        <h2 class="section-heading">Three streams.</h2>-->
+<!--    </div>-->
+<!--    -->
+<!--    <div class="row" id="stream-row">-->
+<!--        <div class="col-md-4 stream-title">-->
+<!--            <h5>Beginners</h5>-->
+<!--            <p>-->
+<!--                New to programming and unsure where to start? Look no further&#8212;the Novice stream focuses on Python,-->
+<!--                a-->
+<!--                versatile and beginner-friendly programming language where you can learn basic game development using-->
+<!--                the Pygame module. Guided by experienced mentors, you’ll be on your way to developing your hack in no-->
+<!--                time!-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 stream-title">-->
+<!--            <h5>Intermediate</h5>-->
+<!--            <p>-->
+<!--                Confident in the basics, but still looking to expand your skill-set? That’s great! The Intermediate-->
+<!--                stream introduces web development, and Kotlin, a Java-compatible and general-purpose programming-->
+<!--                language used primarily for-->
+<!--                development. Take what you learn and build on your skills to create something amazing!-->
+<!--            </p>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 stream-title">-->
+<!--            <h5>Advanced</h5>-->
+<!--            <p>-->
+<!--                So you know what you’re doing&#8212;awesome! The Advanced stream-->
+<!--                covers topics ranging from Linux administration, basic-->
+<!--                networking, and API usage to Firebase and Unity.-->
+<!--                Explore your interests and implement new technologies into your project for a chance to walk away with a-->
+<!--                category prize!-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!-- COVID-19 -->
+<!--<div class="container" style="margin-top: 3em;">-->
+<!--    <div style="background: rgb(255,252,225);" class="section-heading">-->
+<!--        <h2>Create a COVID-19 hack.</h2>-->
+<!--    </div>-->
+<!--    <p>In light of the COVID-19 pandemic, we will be having a special category prize for hacks that best addresses the-->
+<!--        following: </p>-->
+<!--    <div class="row" style="text-align: center">-->
+<!--        <div class="col-md">-->
+<!--            <h6>Supporting those at risk</h6>-->
+<!--        </div>-->
+<!--        <div class="col-md">-->
+<!--            <h6>Assisting those working remotely</h6>-->
+<!--        </div>-->
+<!--        <div class="col-md">-->
+<!--            <h6>Facilitating awareness</h6>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- 7WC -->
+<!--<div class="container" style="margin-top: 3em;">-->
+<!--    <div style="background: rgb(227,255,225);" class="section-heading">-->
+<!--        <h2>Part of the 7WC.</h2>-->
+<!--    </div>-->
+<!--    <p>MasseyHacks is operating in partnership with the Vincent Massey 7 Week Challenge, a unique opportunity for students to discover the many facets of computer science. &nbsp; <a class="expand-link" href="https://7wc.vmcs.club">Check it out ➜</a></p>-->
+<!--    <p></p>-->
+<!--</div>-->
+
+<!-- Weeks Carousels -->
+<div class="carousel slide" data-aos="fade-in" data-interval="3000" data-ride="carousel" id="weeks-carousel">
+    <span id="weeks"></span>
+    <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#weeks-carousel"></li>
+        <li data-slide-to="1" data-target="#weeks-carousel"></li>
+        <li data-slide-to="2" data-target="#weeks-carousel"></li>
+        <li data-slide-to="3" data-target="#weeks-carousel"></li>
+        <li data-slide-to="4" data-target="#weeks-carousel"></li>
+        <li data-slide-to="5" data-target="#weeks-carousel"></li>
+        <li data-slide-to="6" data-target="#weeks-carousel"></li>
+
+    </ol>
+    <div class="carousel-inner">
+        <!-- Week 1 -->
+        <div class="carousel-item active">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 1</span>
+                        <h2>Learnathon</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">Admission to MasseyHacks VII is completely free! We want to give the
+                            largest possible amount of people the opportunity to participate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Week 2 -->
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 2</span>
+                        <h2>Algorithms</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">Our event will be held through Discord. Workshops and ceremonies will be
+                            delivered through a web-conferencing solution.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Week 3/4 -->
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 3/4</span>
+                        <h2>Game Jam</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">Any student in grade 7 to grade 12 can register to be a hacker. If you've
+                            graduated from high
+                            school, we welcome you to apply as a mentor!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Week 5 -->
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 5</span>
+                        <h2>Hardware</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">Not at all — in fact, we encourage newcomers to come and participate in
+                            MasseyHacks. We’ll teach you the fundamentals of programming, tech essentials, and loads
+                            more!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Week 6 -->
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 6</span>
+                        <h2>Web Development</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">
+                            You can go solo and create something by yourself, but we encourage you to form a team
+                            beforehand — everything's better with friends. Teams can have up to 4 members. Don't worry
+                            if you don't have a team at the event, as we will have a team formation event for hackers to
+                            find potential team members.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Finale -->
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Week 7</span>
+                        <h2>Hackenger Hunt</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">
+                            To ensure an event that is safe and enjoyable for everyone, we ask that hackers follow the
+                            <a
+                                    class="expand-link" href="http://mlh.io/code-of-conduct">MLH code of conduct</a>. If
+                            you have any questions or would
+                            like to inform us of any issues, please email us at
+                            <a class="expand-link"
+                               href="mailto:hello@masseyhacks.ca?subject=EquityIssue">hello@masseyhacks.ca</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="week-title">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <span>Finale</span>
+                        <h2>MasseyHacks</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <p class="week-desc">
+                            To ensure an event that is safe and enjoyable for everyone, we ask that hackers follow the
+                            <a
+                                    class="expand-link" href="http://mlh.io/code-of-conduct">MLH code of conduct</a>. If
+                            you have any questions or would
+                            like to inform us of any issues, please email us at
+                            <a class="expand-link"
+                               href="mailto:hello@masseyhacks.ca?subject=EquityIssue">hello@masseyhacks.ca</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div> <!-- END QUESTIONS -->
+    
+    
+    <!-- Carousel controls - hidden -->
+    <a class="carousel-control-prev" data-slide="prev" href="#weeks-carousel" role="button" style="display:none">
+        <span aria-hidden="true" class="carousel-prev-icon"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" data-slide="next" href="#weeks-carousel" role="button" style="display:none">
+        <span aria-hidden="true" class="carousel-next-icon"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div> <!-- END CAROUSEL -->
+<div class="container" style="text-align: center">
+    <p>Still have questions? Email us at <a href="mailto:hello@vmcs.club"
+                                            class="expand-link">hello@vmcs.club</a>.</p>
+</div>
+
+
+<!-- Sponsors -->
+<div class="container sponsors" id="sponsors" data-aos="fade-in">
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <h2>Sponsors</h2>
+            <p>Interested in becoming a sponsor? Check out <a class="expand-link"
+                                                              href="https://b2cdn.vmcs.club/file/7wc-main-assets/7WC_Sponsorship_Prospectus.pdf">our
+                prospectus</a> and contact us at
+                <a class="expand-link" href="mailto:sponsorship@masseyhacks.ca">sponsorship@masseyhacks.ca</a>!<br>
+                The MasseyHacks VI transparency report is available <a class="expand-link"
+                                                                      href="files/mh6-transparency.pdf">here</a>.</p>
+        </div>
+    </div>
+    <div class="row justify-content-center mb-4">
+        <div class="col-lg-12">
+            <div class="gold"></div>
+            <div class="silver">
+                <a class="sponsor-obj" href="https://www.wetech-alliance.com/" target="_blank"><img
+                        alt="We-Tech Alliance" class="zoom"
+                        src="assets/images/sponsors/wetech.png"></a>
+            </div>
+            <div class="bronze">
+                <a class="sponsor-obj" href="https://www.wfcu.ca" target="_blank"><img
+                        alt="WFCU" class="zoom"
+                        src="assets/images/sponsors/wfcu.jpg"></a>
+                <a class="sponsor-obj" href="https://windsor.ieee.ca" target="_blank"><img
+                        alt="IEEE Windsor Section" class="zoom"
+                        src="assets/images/sponsors/ieee.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container partners" id="partners" data-aos="fade-in">-->
+<!--    <div class="row justify-content-center">-->
+<!--        <div class="col-lg-12">-->
+<!--            <h2>Partners</h2>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="row justify-content-center">-->
+<!--        <div class="col-lg-12">-->
+<!--            <div class="partner">-->
+<!--                <a class="sponsor-obj" href="https://mlh.io" target="_blank"><img alt="MLH" class="zoom"-->
+<!--                                                                                  src="assets/images/sponsors/mlh-logo-color.svg"></a>-->
+<!--            -->
+<!--            </div>-->
+<!--        -->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!-- Footer-->
+<footer>
+    <div class="container-fluid">
+        <!-- Desktop footer -->
+        <div class="row align-items-center justify-content-center footer-desktop">
+            <div class="col-md-5 footer-wrapper">
+                <h3 class="footer-title">7 Week Challenge</h3>
+                <p class="footer-copyright"><a href="mailto:hello@masseyhacks.ca" class="expand-link">hello@vmcs.club</a><br>Copyright
+                    &copy; 2021 Vincent Massey Computer Science Club<br>&lt;/&gt; by the VMCSC Platform
+                    Team with <i class="fas fa-coffee"></i></p>
+            </div>
+            <div class="col-md-4">
+                <ul class="footer-links">
+                    <li><a class="expand-link" data-scroll href="#top">Home</a></li>
+                    <li><a class="expand-link" href="#about">About</a></li>
+                    <li><a class="expand-link" href="#weeks">Weeks</a></li>
+                    <li><a class="expand-link" href="#faq">FAQ</a></li>
+                    <!--                    <li><a class="expand-link" href="#past-projects">Past Projects</a></li>-->
+                    <li><a class="expand-link" href="#sponsors">Sponsorship</a></li>
+                    <!--                    <li><a class="expand-link" href="blog">Blog</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <!-- Mobile footer -->
+        <div class="row align-items-center justify-content-center footer-mobile">
+            <div class="col-sm-12">
+                <h3 class="footer-title">7 Week Challenge</h3>
+                <p><a class="expand-link" data-scroll href="#top">Home</a><a class="expand-link" href="#about">About</a><a
+                        class="expand-link" href="#weeks">Weeks</a><a class="expand-link" href="#faq">FAQ</a><a
+                        class="expand-link" href="#sponsors">Sponsorship</a></p>
+                <p class="footer-copyright">Copyright &copy; 2021 Vincent Massey Computer Science Club<br>&lt;/&gt; by the VMCSC Platform
+                    Team with <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- End of the page -->
+<!-- Lines -->
+<div id="grid" style="display: none">
+    <div style="border-left: 1px solid #212529; height: 100vh; left: calc(2vw + 50px); position: absolute;"></div>
+    <div style="border-left: 1px solid #212529; height: 100vh; left: calc(8vw + 50px); position: absolute;"></div>
+    <div style="border-left: 1px solid #212529; height: 100vh; left: calc(calc(98vw - 100px) + 50px); position: absolute;"></div>
+    <div style="border-left: 1px solid #212529; height: 100vh; left: calc(calc(92vw - 100px) + 50px); position: absolute;"></div>
+</div>
+
+<!-- Actual shapes-->
+<div id="shapes">
+    <div class="square-rotated rellax" id="shape1"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape2"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape3" style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape4"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape5"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape6" style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape7"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape8"
+         style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape9" style="transform: rotate(-45deg);"></div>
+    <div class="square-rotated rellax" id="shape10" style="transform: rotate(-45deg);"></div>
+    <!--    <div class="square-rotated rellax" id="shape11" style="transform: rotate(-45deg);"></div>-->
+    <!--    <div class="square-rotated rellax" id="shape12" style="transform: rotate(-45deg);"></div>-->
+    <!--    <div class="square-rotated rellax" id="shape13" style="transform: rotate(-45deg);"></div>-->
+    <!--    <div class="square-rotated rellax" id="shape14" style="transform: rotate(-45deg);"></div>-->
+    <!--    <div class="square-rotated rellax" id="shape15" style="transform: rotate(-45deg);"></div>-->
+
+</div>
+<!-- Scripts -->
+<script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<!-- MasseyHacks JS -->
+<script src="js/main.js"></script>
+<!--<script src="live/js/live-main.js"></script>-->
+
+</body>
+
+</html>
