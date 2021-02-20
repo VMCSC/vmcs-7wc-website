@@ -1,22 +1,24 @@
 .sun-container {
-
+  transform: scale(0.9);
+  position: relative;
   .sun {
-    position: absolute;
-    overflow: hidden;
-    transform: translateY(-50%);
+    //transform: translateY(-50%);
   }
 
   .cloud-peach {
     position: absolute;
     overflow: hidden;
-    top: 2em;
-    left: -2em;
+    top: 0;
+    left: 0;
+    transform: translateX(-25%) translateY(180%);
   }
 
   .cloud-blue {
     position: absolute;
     overflow: hidden;
-    top: 4em;
-    left: 3em;
+    top:0;
+    left: 0;
+    transform: translateX(10%) translateY(220%);
+    cursor: pointer;
   }
 }
