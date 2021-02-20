@@ -23,9 +23,13 @@ jobs:
         with:
           source: _scss/main.scss
           destination: /home/runner/work/vmcs-7wc-website/vmcs-7wc-website/css/main.css
-          
+
+      - name: Copy auxillary files
+        run: cp deploycp/* .
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
           publish_dir: .
