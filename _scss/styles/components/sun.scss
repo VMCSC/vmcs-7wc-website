@@ -8,17 +8,23 @@
   .cloud-peach {
     position: absolute;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    transform: translateX(-25%) translateY(180%);
+    //top: 0;
+    //left: 0;
+    //transform: translateX(-25%) translateY(180%);
+    //top: 70%;
+    //left: -25%;
+    top: 120%;
+    left: -25%;
   }
 
   .cloud-blue {
     position: absolute;
     overflow: hidden;
-    top:0;
-    left: 0;
-    transform: translateX(10%) translateY(220%);
-    cursor: pointer;
+    //top:0;
+    //left: 0;
+    //transform: translateX(10%) translateY(220%);
+    //top: 90%;
+    top: 155%;
+    left: 20%;
   }
 }
