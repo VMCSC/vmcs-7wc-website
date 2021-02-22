@@ -2,31 +2,40 @@
   transform: scale(0.9);
   position: relative;
   .moon {
-    overflow: hidden;
     //transform: translateY(-50%);
   }
 
   .cloud-cyan {
     position: absolute;
     overflow: hidden;
-    //top: 0;
-    //left: 0;
-    //transform: translateX(-25%) translateY(120%);
-    //top: 2em;
-    //left: -2em;
-    top: 230%;
-    left: -20%;
+    top: 0;
+    left: 0;
   }
 
   .cloud-violet {
     position: absolute;
     overflow: hidden;
-    //top: 0;
-    //left: 0;
-    //transform: translateX(-70%) translateY(50%);
-    //top: -0.5em;
-    //left: -10em;
-    top: 140%;
-    left: -90%;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 991.98px) {
+    .cloud-cyan {
+      transform: translateX(-25%) translateY(120%) !important;
+    }
+    .cloud-violet {
+      transform: translateX(-70%) translateY(50%) !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .cloud-cyan {
+      top: 0;
+      left: -20%;
+    }
+    .cloud-violet {
+      top: -15%;
+      left: -90%;
+    }
   }
 }

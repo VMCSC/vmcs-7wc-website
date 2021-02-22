@@ -34,11 +34,11 @@
   }
 }
 
-@media (min-width: 992px) {
-  .week-title {
-    height: 15em;
-  }
-}
+//@media (min-width: 992px) {
+//  .week-title {
+//    height: 20em;
+//  }
+//}
 
 .week-desc {
   margin-top: 1em;
@@ -52,5 +52,13 @@
 }
 
 #weeks-carousel {
+  margin-top: 3rem;
   background-color: rgba(222, 240, 241, 1);
+}
+
+
+@media (min-width: 992px) {
+  #weeks-carousel {
+    margin-top: 8rem;
+  }
 }

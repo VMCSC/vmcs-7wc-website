@@ -1,7 +1,14 @@
 #about {
   transform: translateY(3em);
   margin-top: 3em;
+  //overflow-x: hidden;
 }
+
+//@media (min-width: 1200px){
+//  #about {
+//    overflow-x: visible;
+//  }
+//}
 
 /* Info sections */
 #info-section > div:nth-of-type(even) h2 {

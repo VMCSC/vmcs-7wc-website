@@ -152,7 +152,8 @@
   left: 0;
   right: 0;
   height: 100%;
-  overflow: visible;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 .hero-blob-overlay {
