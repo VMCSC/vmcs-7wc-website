@@ -45,6 +45,15 @@ Made in Canada.`,cdnLeaf,
 Website text and code licensed under MIT. Audiovisual assets are not to be used on other sites without written permission from Vincent Massey Computer Science Club.`);
     
     var rellax = new Rellax('.rellax');
+
+    // var rellax2 = new Rellax('.rellax2', {
+    //     wrapper: '#about',
+    //     callback: function(positions) {
+    //         // callback every position change
+    //         console.log(positions);
+    //     }
+    // })
+
     AOS.init();
     var scroll = new SmoothScroll('a[href*="#"]',{
         speed: 200,
