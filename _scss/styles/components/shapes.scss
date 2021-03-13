@@ -25,7 +25,9 @@
   .square-rotated {
     width: 100px;
     height: 100px;
-    background: #212529;
+    /*background: #212529;*/
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     -webkit-border-radius: 20%;
@@ -34,55 +36,61 @@
   }
 
   #shape1 {
-    top: 5vh;
+    top: 0vh;
     left: 8vw;
+    /*
     transform: rotate(-45deg);
-    background: linear-gradient(to right, #f2994a, #f2c94c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2994a, #f2c94c);*/ /* Chrome 10-25, Safari 5.1-6 */
+    background-image: url("../assets/images/background/shape1.svg");
   }
 
   #shape2 {
-    top: 55vh;
+    top: 30vh;
     left: calc(2vw + 20px);
     transform: rotate(-45deg);
-    width: 60px;
-    height: 60px;
-    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
+    background-image: url("../assets/images/background/shape2.svg");
   }
 
   #shape3 {
     top: 60vh;
     left: calc(96vw - 100px);
-    transform: rotate(-45deg);
-    background: linear-gradient(to right, #56ab2f, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*transform: rotate(-45deg);
+    background: linear-gradient(to right, #56ab2f, #a8e063);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../assets/images/background/shape3.svg");
   }
 
   #shape4 {
-    top: 20vh;
+    top: 5vh;
     left: calc(92vw - 100px);
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg);*/
+    background-image: url("../assets/images/background/shape4.svg");
   }
 
   #shape5 {
-    top: 100vh;
+    top: 180vh;
     left: calc(92vw - 100px);
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg);*/
+    background-image: url("../assets/images/background/shape5.svg");
     /*background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);*/
   }
 
   #shape6 {
-    top: 90vh;
+    top: 150vh;
     left: 8vw;
-    transform: rotate(-45deg);
+    /*transform: rotate(-45deg);
     height: 120px;
-    width: 120px;
+    width: 120px;*/
+    background-image: url("../assets/images/background/shape6.svg");
     /*background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);*/
   }
 
   #shape7 {
-    top: 130vh;
+    top: 200vh;
     left: 2vw;
-    transform: rotate(-45deg);
-    background: linear-gradient(to right, #f46b45, #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*transform: rotate(-45deg);*/
+    background-image: url("../assets/images/background/shape7.svg");
+    /*background: linear-gradient(to right, #f46b45, #eea849);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
   #shape8 {
