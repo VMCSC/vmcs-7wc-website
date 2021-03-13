@@ -56,9 +56,14 @@
   background-color: rgba(222, 240, 241, 1);
 }
 
-
-@media (min-width: 992px) {
+@media (min-width: 769px){
   #weeks-carousel {
-    margin-top: 8rem;
+    margin-top: 1rem;
   }
 }
+
+//@media (min-width: 992px) {
+//  #weeks-carousel {
+//    margin-top: 8rem;
+//  }
+//}

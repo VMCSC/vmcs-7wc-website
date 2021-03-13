@@ -1,5 +1,5 @@
 .sun-container {
-  transform: scale(0.9);
+  transform: scale(0.6);
   position: relative;
   .sun {
     //transform: translateY(-50%);
@@ -37,5 +37,11 @@
       top: 60%;
       left: 20%;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .sun-container{
+    transform: scale(0.9);
   }
 }

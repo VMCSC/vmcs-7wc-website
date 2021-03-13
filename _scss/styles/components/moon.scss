@@ -1,5 +1,5 @@
 .moon-container {
-  transform: scale(0.9);
+  transform: scale(0.7);
   position: relative;
   .moon {
     //transform: translateY(-50%);
@@ -37,5 +37,11 @@
       top: -15%;
       left: -90%;
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .moon-container{
+    transform: scale(0.9);
   }
 }
