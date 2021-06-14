@@ -1,0 +1,49 @@
+/* STREAMS SECTION */
+/*.stream-title h1 {*/
+/*    text-align: center;*/
+/*}*/
+
+#stream-row > div {
+  border-right: 2px solid rgb(200, 200, 200);
+}
+
+#stream-row > div:last-child {
+  border-right: none;
+}
+
+.section-heading {
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 1px solid rgb(200,200,200);
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-sub {
+  font-size: 0.8em;
+  /*padding: 0 5px 0 5px;*/
+}
+
+.profile:last-child {
+  /*padding-right: 0;*/
+}
+
+.profile-flex {
+  /*display: flex;*/
+  /*flex-flow: row wrap;*/
+  /*justify-content: space-between;*/
+}
+
+.profile-flex::after {
+  /*content: "";*/
+  /*flex: auto;*/
+}

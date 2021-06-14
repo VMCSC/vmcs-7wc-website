@@ -1,0 +1,47 @@
+.moon-container {
+  transform: scale(0.7);
+  position: relative;
+  .moon {
+    //transform: translateY(-50%);
+  }
+
+  .cloud-cyan {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  .cloud-violet {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 991.98px) {
+    .cloud-cyan {
+      transform: translateX(-25%) translateY(120%) !important;
+    }
+    .cloud-violet {
+      transform: translateX(-70%) translateY(50%) !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .cloud-cyan {
+      top: 0;
+      left: -20%;
+    }
+    .cloud-violet {
+      top: -15%;
+      left: -90%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .moon-container{
+    transform: scale(0.9);
+  }
+}

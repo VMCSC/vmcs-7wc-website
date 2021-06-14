@@ -1,0 +1,37 @@
+/* Cool looking links */
+
+.expand-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+}
+
+.expand-link:hover {
+  color: $fontDark;
+}
+
+.expand-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  left: -0.1em;
+  right: -0.1em;
+  background: rgba(0, 58, 140, 0.19);
+  transition: height 380ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.expand-link:hover::after {
+  height: 45%;
+  transition: height 380ms cubic-bezier(0.32, 1.04, 0.46, 1.08);
+}
+
+/* Zoom */
+.zoom {
+  transition: transform .2s;
+  transform: scale(1);
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
